@@ -36,7 +36,7 @@
         <textarea id = "userText" rows = "1" cols = "20"></textarea>
         <textarea id ="passText" rows = "1" cols = "20"></textarea>
         <button id = "login" onclick = "loginFunction()">Login</button>
-        <button id = "register">Register Now!</button>  
+        <button id = "register" onclick = "registerFunction()">Register Now!</button>  
         
         <script>
             function loginFunction() {
@@ -44,13 +44,11 @@
                 var passTxt = document.getElementById("passText");
                 
                 if (passTxt.value.length < 7 || userTxt.value.length == 0) {
-                    alert("Incorrect Password");
+                    alert("Incorrect Login Information");
                 }
-                else {
-                    ("login").click(function() {
-                        .post("/test");
-                    });
-                }
+            }
+            function registerFunction() {
+                window.location.href = "/register";
             }
         </script>
     </body>
