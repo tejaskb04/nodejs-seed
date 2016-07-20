@@ -1,7 +1,6 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <style>
+extends layout
+block content
+    <style>
             #user {
                 text-align: left;
             }
@@ -32,8 +31,7 @@
                 top: 130px;
             }
         </style>
-    </head>
-    <body>
+        <h1>#{title}</h1>
         <p id = "user">Username:</p>
         <p id = "pass">Password:</p>
         <p id = "confirm">Confirm Password:</p>
@@ -66,5 +64,3 @@
                 //alert(passBool);
             }
         </script>
-    </body>
-</html>
